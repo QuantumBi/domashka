@@ -7,6 +7,6 @@ def get_matrix(n, m, value):
         matrix.append(post_matrix)
     return matrix
 
-result1 = get_matrix(2, 2, 10)
+result1 = get_matrix(0, 0, 0)
 
 print(result1)
