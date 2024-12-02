@@ -16,8 +16,10 @@ def seredina(spis):
         print(f"Серединное число: {a}")
     elif b > a and b < c:
         print(f"Серединное число: {b}")
-    else:
+    elif c > a and b > c:
         print(f"Серединное число: {c}")
+    else:
+        print("Значит срединного числа нет")
 
 
 def cveta(spis):
