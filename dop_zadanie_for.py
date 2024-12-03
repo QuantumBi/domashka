@@ -10,10 +10,13 @@ def zvezda(n):
 def tablica(spisok):
         a, b, c, d = [int(i) for i in spisok.split()]
         for i in range(c, d+1):
-            print("\t", i, end="")
-        print()
+            print(f"\t{i}", end="")
+        print("\n")
         for j in range(a, b+1):
-            print(f"{j} \t{j*c} \t{j*d}")
+            print(f"{j}\t", end="")
+            [print(f"{j*i}\t", end="") for i in range(c, d+1)]
+            print("\n")
+
 #3 program
 def triangle(n):
     x = 1
@@ -26,8 +29,8 @@ def triangle(n):
         call += 1
 
 
-zvezda(int(input("Программа звезда, введите число: ")))
-print()
-# tablica(input("Программа таблица, введите 4 числа по возрастанию A < B и C < D через пробел пример(7 10 5 6)\n:"))
+# zvezda(int(input("Программа звезда, введите число: ")))
 # print()
+tablica(input("Программа таблица, введите 4 числа по возрастанию A < B и C < D через пробел пример(7 10 5 6)\n:"))
+print()
 # triangle(int(input("Программа треугольник, введите число: ")))
