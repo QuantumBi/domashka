@@ -2,7 +2,7 @@
 
 
 def zvezda(n):
-    for i in range(n):
+    for i in range(1, n+1):
         print(i*"*")
 
 #2 program
@@ -28,6 +28,6 @@ def triangle(n):
 
 zvezda(int(input("Программа звезда, введите число: ")))
 print()
-tablica(input("Программа таблица, введите 4 числа по возрастанию A < B и C < D через пробел пример(7 10 5 6)\n:"))
-print()
-triangle(int(input("Программа треугольник, введите число: ")))
+# tablica(input("Программа таблица, введите 4 числа по возрастанию A < B и C < D через пробел пример(7 10 5 6)\n:"))
+# print()
+# triangle(int(input("Программа треугольник, введите число: ")))
