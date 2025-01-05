@@ -65,3 +65,5 @@ while True:
                 listing()
         elif select == "postlist":
                 postlisting()
+
+print()
