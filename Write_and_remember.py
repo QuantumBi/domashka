@@ -1,12 +1,19 @@
+
+
 def custom_write(file_name, strings):
-    spis = []
+    lens = len(strings)
+    spis = {}
     # with open(file_name, "a", encoding="utf-8") as f:
     #     for i in strings:
     #         f.write(i + "\n")
     with open(file_name, "r", encoding="utf-8") as f:
-        for i in f.readline():
-            print(i)
-    return 0
+        for i in range(lens):
+            x = f.tell()
+            text = f.readline().rstrip("\n")
+            spis[(i+1, x)] = text
+
+
+    return spis
 
 
 info = [
@@ -19,3 +26,7 @@ info = [
 
 
 result = custom_write('test.txt', info)
+
+for elem in result.items():
+
+  print(elem)
